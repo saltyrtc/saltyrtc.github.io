@@ -5,7 +5,7 @@ Here you can find existing implementations of the SaltyRTC protocols.
 
 If you have implemented a SaltyRTC client, task or server yourself and you
 would like to add it to this list, we will gladly accept
-[a pull request](https://github.com/saltyrtc/saltyrtc.github.io/blob/source/content/pages/libraries.md)
+[a pull request](https://github.com/saltyrtc/saltyrtc.github.io/blob/source/content/pages/implementations.md)
 from you.
 
 # Server Implementations
