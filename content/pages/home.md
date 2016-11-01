@@ -4,6 +4,8 @@ Summary: SaltyRTC is an end-to-end encrypted signalling protocol.
 Status: hidden
 Save_as: index.html
 
+<img src='/static/img/try_our_rtc_300px.png' align='right' style='margin-left: 24px;' />
+
 Welcome to saltyrtc.org!
 
 SaltyRTC is an **end-to-end encrypted signalling protocol**. It offers to
