@@ -1,5 +1,5 @@
-Title: Libraries
-Summary: SaltyRTC server and client libraries.
+Title: Implementations
+Summary: SaltyRTC server, client and task implementations.
 
 Here you can find existing implementations of the SaltyRTC protocols.
 
