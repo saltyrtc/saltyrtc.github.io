@@ -10,19 +10,19 @@ from you.
 
 # Server Implementations
 
-- Python: [saltyrtc/saltyrtc-server-python](https://github.com/saltyrtc/saltyrtc-server-python)
+- ![icon](/static/img/python.png) Python: [saltyrtc/saltyrtc-server-python](https://github.com/saltyrtc/saltyrtc-server-python)
 
 # Client Implementations
 
-- Java: [saltyrtc/saltyrtc-client-java](https://github.com/saltyrtc/saltyrtc-client-java)
-- JavaScript: [saltyrtc/saltyrtc-client-js](https://github.com/saltyrtc/saltyrtc-client-js)
+- ![icon](/static/img/java.png) Java: [saltyrtc/saltyrtc-client-java](https://github.com/saltyrtc/saltyrtc-client-java)
+- ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-client-js](https://github.com/saltyrtc/saltyrtc-client-js)
 
 # Task Implementations
 
 ## WebRTC
 
-- Java (Android): [saltyrtc/saltyrtc-task-webrtc-java](https://github.com/saltyrtc/saltyrtc-task-webrtc-java)
-- JavaScript: [saltyrtc/saltyrtc-task-webrtc-js](https://github.com/saltyrtc/saltyrtc-task-webrtc-js)
+- ![icon](/static/img/java.png) Java (Android): [saltyrtc/saltyrtc-task-webrtc-java](https://github.com/saltyrtc/saltyrtc-task-webrtc-java)
+- ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-task-webrtc-js](https://github.com/saltyrtc/saltyrtc-task-webrtc-js)
 
 ## ORTC
 
