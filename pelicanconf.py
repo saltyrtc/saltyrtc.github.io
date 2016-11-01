@@ -12,6 +12,8 @@ TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
+THEME = 'themes/notmyidea'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -23,14 +25,15 @@ AUTHOR_FEED_RSS = None
 MENUITEMS = (('Home', '/'),)
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+    ('Specification', 'https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md'),
+)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+    ('Twitter', 'https://twitter.com/saltyrtc'),
+    ('Github', 'https://github.com/saltyrtc/'),
+)
 
 DEFAULT_PAGINATION = 10
 
