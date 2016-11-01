@@ -28,12 +28,14 @@ MENUITEMS = (('Home', '/'),)
 LINKS = (
     ('Specification', 'https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md'),
 )
+LINKS_WIDGET_NAME = 'Links'
 
 # Social widget
 SOCIAL = (
     ('Twitter', 'https://twitter.com/saltyrtc'),
     ('Github', 'https://github.com/saltyrtc/'),
 )
+SOCIAL_WIDGET_NAME = 'Social'
 
 DEFAULT_PAGINATION = 10
 
