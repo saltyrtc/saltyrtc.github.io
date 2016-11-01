@@ -15,6 +15,10 @@ DEFAULT_LANG = 'en'
 THEME = 'themes/notmyidea'
 
 STATIC_PATHS = ['static']
+EXTRA_PATH_METADATA = {
+    'static/robots.txt': {'path': 'robots.txt'},
+    'static/favicon-64.png': {'path': 'favicon.ico'},
+}
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
