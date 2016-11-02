@@ -14,14 +14,14 @@ from you.
 
 # Client Implementations
 
-- ![icon](/static/img/java.png) Java: [saltyrtc/saltyrtc-client-java](https://github.com/saltyrtc/saltyrtc-client-java)
+- ![icon](/static/img/java.svg) Java: [saltyrtc/saltyrtc-client-java](https://github.com/saltyrtc/saltyrtc-client-java)
 - ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-client-js](https://github.com/saltyrtc/saltyrtc-client-js)
 
 # Task Implementations
 
 ## WebRTC
 
-- ![icon](/static/img/java.png) Java (Android): [saltyrtc/saltyrtc-task-webrtc-java](https://github.com/saltyrtc/saltyrtc-task-webrtc-java)
+- ![icon](/static/img/java.svg) Java (Android): [saltyrtc/saltyrtc-task-webrtc-java](https://github.com/saltyrtc/saltyrtc-task-webrtc-java)
 - ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-task-webrtc-js](https://github.com/saltyrtc/saltyrtc-task-webrtc-js)
 
 ## ORTC
