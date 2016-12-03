@@ -1,10 +1,12 @@
 Title: Home
 Date: 2016-11-01
+Modified: 2016-12-03 19:00
 Summary: SaltyRTC is an end-to-end encrypted signalling protocol.
+Sort-Order: 0
 Status: hidden
 Save_as: index.html
 
-<img src='/static/img/try_our_rtc_300px.png' align='right' style='margin-left: 24px;' />
+<img src='{filename}/static/img/try_our_rtc_300px.png' style='float: right; margin-left: 24px;' />
 
 Welcome to saltyrtc.org!
 
@@ -13,15 +15,24 @@ freely choose from a range of signalling tasks, such as setting up a **WebRTC**
 or **ORTC** peer-to-peer connection. SaltyRTC is completely open to new and
 custom signalling tasks for everything feasible.
 
+## Getting Started
+
+Just want to dive in and use SaltyRTC as your signalling service?
+[Go ahead and get started!][getting-started]
+
 ## Specification
 
-The specification can be found [on
-Github](https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md).
-Feel free to [open an issue](://github.com/saltyrtc/saltyrtc-meta/issues) if
-you have a question or want to improve something!
+The specification can be found [onGithub][saltyrtc-spec].
+Feel free to [open an issue][saltyrtc-issues] if you have a question or want to
+improve something!
 
 ## Source Code
 
 SaltyRTC is free and open source. All our code can be found [on
 Github](https://github.com/saltyrtc/). There's also a [list of
 implementations](/pages/implementations.html).
+
+[getting-started]: {filename}/pages/getting_started.md
+[saltyrtc-spec]: https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md
+[saltyrtc-issues]: https://github.com/saltyrtc/saltyrtc-meta/issues
+
