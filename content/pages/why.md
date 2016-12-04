@@ -11,8 +11,8 @@ Here's why you should use SaltyRTC. With SaltyRTC,
 * signalling data is fully end-to-end encrypted,
 * zero trust towards the server is needed,
 * no data is stored on the server,
-* servers can be self-hosted,
-* it doesn't fall apart without SSL/TLS, and
+* servers can be hosted on your own server,
+* it doesn't fall apart without TLS (but you should still use it), and
 * it's not limited to WebRTC and ORTC.
 
 # Long
@@ -46,7 +46,7 @@ Most of them provide transport encryption and thus require the end user of the
 WebRTC application to trust a third party that relays signalling messages from 
 one peer to another before they can communicate directly. For example, 
 [Firebase][firebase] offers such a solution. You will have to trust that they 
-have no security issues regarding their SSL/TLS settings and certificates. 
+have no security issues regarding their TLS settings and certificates. 
 Furthermore, providers such as Firebase have full access to the exchanged 
 signalling messages in plaintext and are technically able to modify them. While 
 you may choose to trust Firebase to not modify or use signalling data in any 
@@ -72,7 +72,7 @@ where SaltyRTC comes in. The only thing a SaltyRTC server effectively knows is
 what path you're on, whether you are an *initiator* or a *responder* and who
 sends which messages to which peer. Because SaltyRTC clients authenticate one
 another, the server cannot do any other attack but a denial of service. You can
-host your own SaltyRTC server and the protocol is secure even without SSL/TLS.
+host your own SaltyRTC server and the protocol is secure even without TLS.
 Even if the (optional) SaltyRTC server permanent key has been compromised,
 client-to-client messages are still secure because they're end-to-end encrypted. Furthermore, while SaltyRTC is a simple protocol it is not limited to WebRTC and
 ORTC as it can be extended to be used for any signalling purpose desired.
