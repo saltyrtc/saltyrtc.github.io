@@ -14,6 +14,9 @@ from pelicanconf import *
 SITEURL = 'http://saltyrtc.org'
 RELATIVE_URLS = False
 
+# Add CNAME
+EXTRA_PATH_METADATA['static/CNAME'] = {'path': 'CNAME'}
+
 # Feed generation settings
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
