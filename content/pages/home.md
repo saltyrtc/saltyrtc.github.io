@@ -22,7 +22,7 @@ Just want to dive in and use SaltyRTC as your signalling service?
 
 ## Specification
 
-The specification can be found [onGithub][saltyrtc-spec].
+The specification can be found [on Github][saltyrtc-spec].
 Feel free to [open an issue][saltyrtc-issues] if you have a question or want to
 improve something!
 
