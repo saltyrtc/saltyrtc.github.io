@@ -8,7 +8,7 @@ Summary: Getting started to use SaltyRTC as your signalling service.
 
 If you want to try out SaltyRTC without much of a hassle, you can use our public server which is available at `wss://server.saltyrtc.org:9287`. **Do not use this server for production!** We may decide to change the port, shut down the server, etc. Our server's public permanent key is `f77fe623b6977d470ac8c7bf7011c4ad08a1d126896795db9d2b4b7a49ae1045` (hex-encoded).
 
-The following sub-sections describe how to set up a self-hosted SaltyRTC server.
+The following sub-sections describe how to set up the SaltyRTC server for Python.
 
 ## Installation
 
@@ -32,9 +32,11 @@ Public permanent key: 76bfbb87b72f39ce88db3c7c1780eb3c7cdec5ab07649c9e807f6d2f8b
 
 ### TLS Certificate & Key
 
-Although the SaltyRTC protocol is secure without TLS, we still recommend to supply a valid certificate for TLS. Generate it for your domain you want to use the server on. However, it's perfectly fine to not use a certificate during development on a local machine.
+Although the SaltyRTC protocol is secure without TLS, we still recommend to supply a valid certificate for TLS as it helps to protect metadata. Generate it for your domain you want to use the server on.
 
 The server can be restarted by sending a `HUP` signal to it after a new certificate has been generated (for example by Let's Encrypt's `certbot`).
+
+During development, it's perfectly fine to omit the certificate.
 
 ## Usage
 
@@ -44,7 +46,7 @@ Start the server by running the following command:
 saltyrtc-server -v7 -c serve -sc <tls-certificate> -sk <tls-private-key> <saltyrtc-permanent-key>
 ```
 
-The options `-v` and `-c` control the logging verbosity and style. Run `saltyrtc-server --help` and `saltyrtc-server serve --help` for details on options.
+The options `-v` and `-c` control the logging verbosity and format. Run `saltyrtc-server --help` and `saltyrtc-server serve --help` for details on options.
 
 # Client
 
