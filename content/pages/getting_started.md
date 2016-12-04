@@ -44,7 +44,7 @@ Start the server by running the following command:
 saltyrtc-server -v7 -c serve -sc <tls-certificate> -sk <tls-private-key> <saltyrtc-permanent-key>
 ```
 
-The arguments `-v` and `-c` control the logging verbosity and style. Run `saltyrtc-server --help` and `saltyrtc-server serve --help` for details on arguments.
+The options `-v` and `-c` control the logging verbosity and style. Run `saltyrtc-server --help` and `saltyrtc-server serve --help` for details on options.
 
 # Client
 
