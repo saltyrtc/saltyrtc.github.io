@@ -26,6 +26,13 @@ The specification can be found [on Github][saltyrtc-spec].
 Feel free to [open an issue][saltyrtc-issues] if you have a question or want to
 improve something!
 
+## Demo
+
+If you want to play around with SaltyRTC, you can try our
+[demo][saltyrtc-demo]. The repository contains both an Android app and a simple
+web application that can exchange text messages via signaling channel and via
+WebRTC data channel.
+
 ## Source Code
 
 SaltyRTC is free and open source. All our code can be found [on
@@ -35,4 +42,4 @@ implementations](/pages/implementations.html).
 [getting-started]: {filename}/pages/getting_started.md
 [saltyrtc-spec]: https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md
 [saltyrtc-issues]: https://github.com/saltyrtc/saltyrtc-meta/issues
-
+[saltyrtc-demo]: https://github.com/saltyrtc/saltyrtc-demo
