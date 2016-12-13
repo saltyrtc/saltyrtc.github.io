@@ -18,6 +18,11 @@ Install dependencies:
 
 ## Development
 
+Make sure that submodules are cloned:
+
+    git submodule init
+    git submodule update
+
 You can build the static HTML into the `output/` directory:
 
     make html
