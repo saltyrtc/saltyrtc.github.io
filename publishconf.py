@@ -11,7 +11,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 # Page settings
-SITEURL = 'http://saltyrtc.org'
+SITEURL = 'https://saltyrtc.org'
 RELATIVE_URLS = False
 
 # Feed generation settings
