@@ -39,6 +39,11 @@ SaltyRTC is free and open source. All our code can be found [on
 Github](https://github.com/saltyrtc/). There's also a [list of
 implementations](/pages/implementations.html).
 
+## Contributing
+
+If you want to contribute, feel free to open an issue or send a pull
+request in one of our Github projects.
+
 [getting-started]: {filename}/pages/getting_started.md
 [saltyrtc-spec]: https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md
 [saltyrtc-issues]: https://github.com/saltyrtc/saltyrtc-meta/issues
