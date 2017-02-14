@@ -1,6 +1,6 @@
 Title: Implementations
 Sort-Order: 3
-Summary: SaltyRTC server, client and task implementations.
+Summary: List of SaltyRTC server, client and task implementations.
 
 Here you can find existing implementations of the SaltyRTC protocols.
 

@@ -1,6 +1,6 @@
 Title: Security
 Sort-Order: 4
-Summary: Security processes.
+Summary: How to report security issues related to SaltyRTC.
 
 # Reporting Security Issues
 
