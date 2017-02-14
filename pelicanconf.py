@@ -16,7 +16,7 @@ AUTHOR = 'SaltyRTC'
 SITENAME = AUTHOR
 #SITETITLE = AUTHOR
 SITESUBTITLE = 'An end-to-end encrypted signalling protocol'
-#SITEDESCRIPTION = '{} - {}'.format(SITENAME, SITESUBTITLE)
+SITEDESCRIPTION = 'SaltyRTC is an end-to-end encrypted signalling protocol. It offers to freely choose from a range of signalling tasks, such as setting up a WebRTC or ORTC peer-to-peer connection.'
 SITEICON = SITEURL + '/static/img/shaker.svg'
 
 # Page settings
