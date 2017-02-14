@@ -6,7 +6,7 @@ Our project website.
 
 Create a virtualenv:
 
-    pyvenv VENV
+    python -m venv VENV
 
 Activate virtualenv:
 
