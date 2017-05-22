@@ -41,8 +41,8 @@ implementations](/pages/implementations.html).
 
 ## Contributing
 
-If you want to contribute, feel free to open an issue or send a pull
-request in one of our Github projects.
+If you want to contribute or have a bug report or a feature request, feel free
+to open an issue or send a pull request in one of our Github projects.
 
 [getting-started]: {filename}/pages/getting_started.md
 [saltyrtc-spec]: https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md
