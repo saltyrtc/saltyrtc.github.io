@@ -36,4 +36,4 @@ Alternatively, start the development server:
 Simply use the following command to push the local version of the website to
 the `master` branch on Github:
 
-    make github
+    make ftp_upload
