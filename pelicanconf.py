@@ -60,8 +60,6 @@ SOCIAL = (
 )
 LINKS = (
     ('Specification', 'https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md'),
-    ('WebRTC', 'https://webrtc.org/'),
-    ('ORTC', 'https://ortc.org/'),
 )
 
 # Plugins

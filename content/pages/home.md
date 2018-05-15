@@ -27,6 +27,13 @@ The specification can be found [on Github][saltyrtc-spec].
 Feel free to [open an issue][saltyrtc-issues] if you have a question or want to
 improve something!
 
+## Tasks
+
+There are currently three SaltyRTC tasks specified:
+[WebRTC](https://github.com/saltyrtc/saltyrtc-meta/blob/master/Task-WebRTC.md),
+[ORTC](https://github.com/saltyrtc/saltyrtc-meta/blob/master/Task-ORTC.md) and
+[Relayed Data](https://github.com/saltyrtc/saltyrtc-meta/blob/master/Task-RelayedData.md).
+
 ## Demo
 
 If you want to play around with SaltyRTC, you can try our
