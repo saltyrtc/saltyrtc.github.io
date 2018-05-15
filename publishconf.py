@@ -20,7 +20,3 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 # Cleanup
 DELETE_OUTPUT_DIRECTORY = True
-
-# Disqus
-#DISQUS_SITENAME = ''  # TODO
-

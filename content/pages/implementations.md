@@ -17,8 +17,14 @@ from you.
 
 - ![icon](/static/img/java.svg) Java: [saltyrtc/saltyrtc-client-java](https://github.com/saltyrtc/saltyrtc-client-java)
 - ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-client-js](https://github.com/saltyrtc/saltyrtc-client-js)
+- ![icon](/static/img/rust.png) Rust: [saltyrtc/saltyrtc-client-rs](https://github.com/saltyrtc/saltyrtc-client-rs)
 
 # Task Implementations
+
+## Relayed Data
+
+- ![icon](/static/img/javascript.png) JavaScript: [saltyrtc/saltyrtc-task-relayed-data-js](https://github.com/saltyrtc/saltyrtc-task-relayed-data-js)
+- ![icon](/static/img/rust.png) Rust: [saltyrtc/saltyrtc-task-relayed-data-rs](https://github.com/saltyrtc/saltyrtc-task-relayed-data-rs)
 
 ## WebRTC
 

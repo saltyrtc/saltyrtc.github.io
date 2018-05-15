@@ -1,6 +1,6 @@
 Title: Home
 Date: 2016-11-01
-Modified: 2016-12-03 19:00
+Modified: 2018-05-15 09:00
 Summary: SaltyRTC is an end-to-end encrypted signalling protocol. It offers to freely choose from a range of signalling tasks, such as setting up a WebRTC or ORTC peer-to-peer connection.
 Sort-Order: 0
 Status: hidden
@@ -12,8 +12,9 @@ Welcome to saltyrtc.org!
 
 SaltyRTC is an **end-to-end encrypted signalling protocol**. It offers to
 freely choose from a range of signalling tasks, such as setting up a **WebRTC**
-or **ORTC** peer-to-peer connection. SaltyRTC is completely open to new and
-custom signalling tasks for everything feasible.
+or **ORTC** peer-to-peer connection, or even using the WebSocket based
+signaling server as a relay. SaltyRTC is completely open to new and custom
+signalling tasks for everything feasible.
 
 ## Getting Started
 
