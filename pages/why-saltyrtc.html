@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Why SaltyRTC?</title>
+        <meta name="description" content="What is SaltyRTC all about and why should I use it?">
+        <link rel="stylesheet" href="https://saltyrtc.org/theme/css/main.css" />
+        <link rel="stylesheet" href="https://saltyrtc.org/theme/css/custom.css" />
+        <link href="https://saltyrtc.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="SaltyRTC Atom Feed" />
+        <link rel="icon" type="image/png" href="/favicon.ico">
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://saltyrtc.org/"><img src="/static/img/shaker.svg" height="39"> SaltyRTC  <strong>An end-to-end encrypted signalling protocol</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="https://saltyrtc.org/pages/why-saltyrtc.html">Why SaltyRTC?</a></li>
+                    <li><a href="https://saltyrtc.org/pages/getting-started.html">Getting Started</a></li>
+                    <li><a href="https://saltyrtc.org/pages/implementations.html">Implementations</a></li>
+                    <li><a href="https://saltyrtc.org/pages/security.html">Security</a></li>
+                    <li><a href="https://saltyrtc.org/pages/use-cases.html">Use Cases</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Why SaltyRTC?</h1>
+    
+    <h1>Short</h1>
+<p>Here's why you should use SaltyRTC. With SaltyRTC,</p>
+<ul>
+<li>signalling data is fully end-to-end encrypted,</li>
+<li>zero trust towards the server is needed,</li>
+<li>no data is stored on the server,</li>
+<li>servers can be hosted on your own server,</li>
+<li>it doesn't fall apart without TLS (but you should still use it), and</li>
+<li>it's not limited to WebRTC and ORTC.</li>
+</ul>
+<h1>Long</h1>
+<p>We'll take WebRTC signalling solutions as an example to describe existing
+signalling solutions and their security issues.</p>
+<p>Most existing applications that utilise WebRTC claim that their users are fully 
+end-to-end encrypted because WebRTC provides end-to-end encryption. However, 
+this is not true. Because if the signalling is not end-to-end encrypted, it's
+not guaranteed that the peer you connect to is actually the peer you originally
+wanted to establish the connection with. A man-in-the-middle attack is still
+very possible. Thus, signalling information authentication and integrity is the
+weakest link of WebRTC's end-to-end encryption claim.</p>
+<p>But the man-in-the-middle attack isn't the only problem. WebRTC's signalling 
+data also contains information about the peer's IP addresses which may leak 
+information about its location. It possibly contains information that can be 
+used to conclude browser vendor and version, codecs which may lead to installed 
+libraries and their versions, etc. Thus, we do not want anyone else but the
+other peer we want to communicate with to have access to this data. This can
+only be achieved by using end-to-end encryption techniques.</p>
+<p>Now that we know why it's important to end-to-end encrypt the signalling 
+messages, we'll go through existing signalling solutions and their problems.</p>
+<h2>Transport Encryption Solutions</h2>
+<p>There are lots of available hosted signalling solutions for WebRTC. 
+Most of them provide transport encryption and thus require the end user of the 
+WebRTC application to trust a third party that relays signalling messages from 
+one peer to another before they can communicate directly. For example, 
+<a href="https://firebase.google.com">Firebase</a> offers such a solution. You will have to trust that they 
+have no security issues regarding their TLS settings and certificates. 
+Furthermore, providers such as Firebase have full access to the exchanged 
+signalling messages in plaintext and are technically able to modify them. While 
+you may choose to trust Firebase to not modify or use signalling data in any 
+way, they still have obligations to follow national laws and might be compelled 
+to hand out the end user's signalling data.</p>
+<h2>Self-Hosted Transport Encryption Solutions</h2>
+<p>There are also plenty of transport encrypted signalling solutions that can be
+hosted on your own server, such as <a href="https://github.com/peers/peerjs-server">PeerJS</a>. Although this is a better
+solution than trusting a third party, the end user still has to trust you to not
+modify signalling messages and not have any security issues on your severs.
+Even though we usually don't want to admit it, secretly we all know that
+certificate and private key handling isn't easy. Moreover, you're also obliged
+to follow national laws and might be compelled to hand out your user's
+signalling data. So, this is not ideal either.</p>
+<h2>SaltyRTC - An End-to-End Encrypted Solution</h2>
+<p>So, to summarise, we want a signalling solution where the server does not need
+to be trusted at all and the messages are end-to-end encrypted. This is exactly
+where SaltyRTC comes in. The only thing a SaltyRTC server effectively knows is
+what path you're on, whether you are an <em>initiator</em> or a <em>responder</em> and who
+sends which messages to which peer. Because SaltyRTC clients authenticate one
+another, the server cannot do any other attack but a denial of service. You can
+host your own SaltyRTC server and the protocol is secure even without TLS.
+Even if the (optional) SaltyRTC server permanent key has been compromised,
+client-to-client messages are still secure because they're end-to-end encrypted. Furthermore, while SaltyRTC is a simple protocol it is not limited to WebRTC and
+ORTC as it can be extended to be used for any signalling purpose desired.</p>
+<p>Convinced? <a href="https://saltyrtc.org/pages/getting-started.html">Get started</a> now!</p>
+<p>Not convinced, yet? Take a look at
+<a href="https://webrtc-security.github.io">A Study of WebRTC Security</a>.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md">Specification</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>Social</h2>
+                        <ul>
+                            <li><a href="https://saltyrtc.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">Atom Feed</a></li>
+
+                            <li><a href="https://twitter.com/saltyrtc">Twitter</a></li>
+                            <li><a href="https://github.com/saltyrtc/">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+</body>
+</html>

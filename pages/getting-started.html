@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Getting Started</title>
+        <meta name="description" content="Getting started to use SaltyRTC as your signalling service.">
+        <link rel="stylesheet" href="https://saltyrtc.org/theme/css/main.css" />
+        <link rel="stylesheet" href="https://saltyrtc.org/theme/css/custom.css" />
+        <link href="https://saltyrtc.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="SaltyRTC Atom Feed" />
+        <link rel="icon" type="image/png" href="/favicon.ico">
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://saltyrtc.org/"><img src="/static/img/shaker.svg" height="39"> SaltyRTC  <strong>An end-to-end encrypted signalling protocol</strong></a></h1>
+                <nav><ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="https://saltyrtc.org/pages/why-saltyrtc.html">Why SaltyRTC?</a></li>
+                    <li class="active"><a href="https://saltyrtc.org/pages/getting-started.html">Getting Started</a></li>
+                    <li><a href="https://saltyrtc.org/pages/implementations.html">Implementations</a></li>
+                    <li><a href="https://saltyrtc.org/pages/security.html">Security</a></li>
+                    <li><a href="https://saltyrtc.org/pages/use-cases.html">Use Cases</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Getting Started</h1>
+    
+    <h1>Demo</h1>
+<p>If you just want to see a demo, you can try out our
+<a href="https://github.com/saltyrtc/saltyrtc-demo">Demo Application</a>.</p>
+<h1>Server</h1>
+<p>If you want to try out SaltyRTC without much of a hassle, you can use our 
+public server which is available at <code>wss://server.saltyrtc.org:9287</code>. <strong>Do not 
+use this server for production!</strong> We may decide to change the port, shut down 
+the server, etc. Our server's public permanent key is 
+<code>f77fe623b6977d470ac8c7bf7011c4ad08a1d126896795db9d2b4b7a49ae1045</code> 
+(hex-encoded).</p>
+<p>The following sub-sections describe how to set up the SaltyRTC server for 
+Python.</p>
+<h2>Installation</h2>
+<p>Install your own self-hosted server by following the instructions of the 
+<a href="https://github.com/saltyrtc/saltyrtc-server-python/blob/master/README.rst#saltyrtc-signalling-server">SaltyRTC Server for Python Readme</a>.</p>
+<h2>Configuration</h2>
+<h3>Permanent Key</h3>
+<p>We highly recommend to generate a permanent key for the server.</p>
+<div class="highlight"><pre><span></span>saltyrtc-server generate &lt;path-for-new-permanent-key&gt;
+</pre></div>
+
+
+<p>The output contains the hex-encoded public permanent key which needs to be 
+distributed to the clients.</p>
+<h3>TLS Certificate &amp; Key</h3>
+<p>Although the SaltyRTC protocol is secure without TLS, we still recommend to 
+supply a valid certificate for TLS as it helps to protect metadata. Generate it 
+for your domain you want to use the server on.</p>
+<p>The server can be restarted by sending a <code>HUP</code> signal to it after a new 
+certificate has been generated (for example by Let's Encrypt's <code>certbot</code>).</p>
+<p>During development, it's perfectly fine to omit the certificate.</p>
+<h2>Usage</h2>
+<p>Start the server by running the following command:</p>
+<div class="highlight"><pre><span></span>saltyrtc-server -v7 -c serve -sc &lt;tls-certificate&gt; -sk &lt;tls-private-key&gt; -k &lt;saltyrtc-permanent-key&gt;
+</pre></div>
+
+
+<p>The options <code>-v</code> and <code>-c</code> control the logging verbosity and format. Use the 
+<code>--help</code> flag for details on options.</p>
+<h1>Client</h1>
+<p>For this example, we'll explain how to embed the SaltyRTC JavaScript Client 
+implementation in your JavaScript application.</p>
+<h2>Installation</h2>
+<p>Follow the instructions of the
+<a href="https://github.com/saltyrtc/saltyrtc-client-js#installing">SaltyRTC JavaScript Client Readme</a>.</p>
+<h2>Usage</h2>
+<p>To embed SaltyRTC's signalling in your application, you'll need to follow the 
+<a href="https://github.com/saltyrtc/saltyrtc-client-js#usage">usage instructions</a> of the JavaScript client.</p>
+<p>Set host and port according to the server you want to use. In addition, enable 
+the tasks you want to execute (for example initiating a WebRTC peer-to-peer 
+connection).</p>
+<p>Don't forget that you'll need to exchange the <em>authentication token</em> from one 
+client to another. We recommend using QR codes for mobile applications.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="https://github.com/saltyrtc/saltyrtc-meta/blob/master/Protocol.md">Specification</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>Social</h2>
+                        <ul>
+                            <li><a href="https://saltyrtc.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">Atom Feed</a></li>
+
+                            <li><a href="https://twitter.com/saltyrtc">Twitter</a></li>
+                            <li><a href="https://github.com/saltyrtc/">Github</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+</body>
+</html>
