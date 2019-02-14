@@ -82,4 +82,3 @@ SITEMAP = {
         'pages': 'monthly',
     }
 }
-

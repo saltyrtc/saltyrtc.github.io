@@ -6,7 +6,7 @@ Sort-Order: 0
 Status: hidden
 Save_as: index.html
 
-<img src='{filename}/static/img/try_our_rtc_300px.png' style='float: right; margin-left: 24px;' />
+<img src='{static}/static/img/try_our_rtc_300px.png' style='float: right; margin-left: 24px;' />
 
 Welcome to saltyrtc.org!
 
