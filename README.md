@@ -33,7 +33,9 @@ Alternatively, start the development server:
 
 ## Publishing
 
-Simply use the following command to push the local version of the website to
-the `master` branch on Github:
+Once you're happy with the changes, generate them via:
 
-    make ftp_upload
+    make clean && make pages
+    git push origin pages
+
+The server should automatically fetch the `pages` branch.
