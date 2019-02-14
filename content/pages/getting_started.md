@@ -12,7 +12,7 @@ If you just want to see a demo, you can try out our
 # Server
 
 If you want to try out SaltyRTC without much of a hassle, you can use our 
-public server which is available at `wss://server.saltyrtc.org:9287`. **Do not 
+public server which is available at `wss://server.saltyrtc.org:443`. **Do not 
 use this server for production!** We may decide to change the port, shut down 
 the server, etc. Our server's public permanent key is 
 `f77fe623b6977d470ac8c7bf7011c4ad08a1d126896795db9d2b4b7a49ae1045` 
